@@ -17,3 +17,11 @@
      window.scrollTo({ top: 0, behavior: 'smooth' });
  };
  //  Backtotop
+
+
+
+ // pre loader
+ window.addEventListener('load', function () {
+    document.body.classList.add('loaded');
+});
+// preloader

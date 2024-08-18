@@ -15,40 +15,63 @@
        <!-- OwnCss -->
 </head>
 <body>
-    
+     <!-- pre_loader -->
+      <div id="preloader">
+        <div class="spinner-grow text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <!-- pre_loader -->
       <!-- header -->
        <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
           <div class="container-fluid">
-            <a class="navbar-brand border-bottom border-3 border-primary" href="index.html">KS Store</a>
+            <a class="navbar-brand" href="index.html">KS Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-3 mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link ms-2 link-dark" href="#">About</a>
+                  <a class="nav-link ms-2 link-dark border-bottom border-3 border-primary" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link ms-2 link-dark" href="#">Products</a>
                 </li>
                 <li class="nav-item">
                   <button class="nav-link ms-2 position-relative link-dark" type="button" data-bs-toggle="offcanvas"
-                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart<span style="top: 10px;" class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">4</span></button>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-2 link-dark" href="signin.html">Sign in</a>
+                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart<span style="top: 8px;" class="position-absolute start-100 translate-middle badge rounded-circle bg-danger">5</span></button>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle ms-2 link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle ms-1 link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Pages
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">About</a></li>
                     <li><a class="dropdown-item" href="#">Contact</a></li>
-                    <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
                     <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasleft" aria-controls="offcanvasleft">Wishlist <span class="badge text-bg-danger rounded-circle">7</span></button></li>
                     <li><a class="dropdown-item" href="#">Faq</a></li>
                     <li><a class="dropdown-item" href="#">Docs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-0 link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item disabled" href="#">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="signin.html">Sign in</a></li>
+                    <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                    <li><a class="dropdown-item disabled" href="signup.html">Log out</a></li>
                   </ul>
                 </li>
               </ul>
@@ -253,23 +276,23 @@
           <div class="carousel-inner">
             <div class="carousel-item active position-relative">
               <img src="img/banner/product2.jpg" class="d-block w-100" alt="..." style="height: 450px;">
-              <div class="position-absolute text-white bg-dark p-3 rounded me-5 ms-2" style="top: 25%;left: 10%; opacity: 0.8;">
-                <h5 class="fs-3">Eid ul Fit'r Offer</h5>
-                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan.</p>
+              <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
+                <h5 class="fs-1">Eid ul Fit'r Offer</h5>
+                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-2">See Offers</a></p>
               </div>
             </div>
             <div class="carousel-item position-relative">
               <img src="img/banner/product1.jpg" class="d-block w-100" alt="..." style="height: 450px;">
-              <div class="position-absolute text-white bg-dark p-3 rounded me-5 ms-2" style="top: 25%;left: 10%; opacity: 0.8;">
-                <h5 class="fs-3">First slide label</h5>
-                <p style="max-width: 600px;">Some representative placeholder content for the first Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.slide.</p>
+              <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
+                <h1 class="fs-1">Eid ul Fit'r Offer</h1>
+                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-2">See Offers</a></p>
               </div>
             </div>
             <div class="carousel-item position-relative">
               <img src="img/banner/product3.jpg" class="d-block w-100" alt="..." style="height: 450px;">
-              <div class="position-absolute text-white bg-dark p-3 rounded me-5 ms-2 " style="top: 25%;left: 10%; opacity: 0.8;">
-                <h5 class="fs-3">First slide label</h5>
-                <p style="max-width: 600px;">Some representative placeholder content for the first Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.slide.</p>
+              <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
+                <h3 class="fs-1">Eid ul Fit'r Offer</h3>
+                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-2">See Offers</a></p>
               </div>
             </div>
           </div>
