@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS-Grocery-Shop</title>
+     <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap -->
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+     <!-- fontawesome -->
+      <!-- OwnCss -->
+       <link rel="stylesheet" href="css/index.css">
+       <!-- OwnCss -->
+</head>
+<body>
+    
+      <!-- header -->
+       <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+          <div class="container-fluid">
+            <a class="navbar-brand border-bottom border-3 border-primary" href="index.html">KS Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-3 mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link ms-2 link-dark" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2 link-dark" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link ms-2 position-relative link-dark" type="button" data-bs-toggle="offcanvas"
+                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart<span style="top: 10px;" class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">4</span></button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2 link-dark" href="signin.html">Sign in</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-2 link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                    <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasleft" aria-controls="offcanvasleft">Wishlist <span class="badge text-bg-danger rounded-circle">7</span></button></li>
+                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                    <li><a class="dropdown-item" href="#">Docs</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search Product">
+                <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+       </header>
+      <!-- header -->
+
+
+      <!-- offcanvas -->
+      <section>
+        <!-- cart -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Cart items</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <table class="table object-fit-cover border">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">details</th>
+                    <th scope="col">Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/chanachur.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $160</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: fat chanachur/Nipun</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><img src="img/product/cookie.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $160</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: fat chanachur/Nipun</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/rice.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $160</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: fat chanachur/Nipun</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/wheel.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $60</li>
+                      <li>Quantity: 500gm</li>
+                      <li>Quality: detergent powder</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/flour.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $37</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: desi tarok</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#" class="w-100 btn btn-primary my-1">Edit cart items</a>
+              <a href="#" class="w-100 btn btn-danger">Check Out</a>
+          </div>
+          </div>
+          <!-- cart -->
+          <!-- Wishlist -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasleft" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Wish List </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <table class="table object-fit-cover border">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">details</th>
+                    <th scope="col">Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/chanachur.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $160</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: fat chanachu</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                    <td><a href="" class="text-dark"><i class="fa fa-x"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><img src="img/product/cookie.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $160</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: fat chanachur</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                    <td><a href="" class="text-dark"><i class="fa fa-x"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/rice.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $160</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: fat chanachur</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                    <td><a href="" class="text-dark"><i class="fa fa-x"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/wheel.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $60</li>
+                      <li>Quantity: 500gm</li>
+                      <li>Quality: detergent powder</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 5</td>
+                    <td><a href="" class="text-dark"><i class="fa fa-x"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/product/flour.jpg" alt="" width="60px"></td>
+                    <td>
+                      <ul>
+                      <li>Price: $37</li>
+                      <li>Quantity: 1 kg</li>
+                      <li>Quality: desi</li>
+                      </ul>
+                    </td>
+                    <td>1kg x 1</td>
+                    <td><a href="" class="text-dark"><i class="fa fa-x"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#" class="w-100 btn btn-primary my-1">Delete All Items</a>
+              <a href="#" class="w-100 btn btn-danger">Add All Items in Cart Menu</a>
+            </div>
+            </div>
+            <!-- Wishlist -->
+      </section>
+      <!-- offcanvas -->
+
+
+      <!-- Banner slider -->
+      <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+              <img src="img/banner/product2.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+              <div class="position-absolute text-white bg-dark p-3 rounded me-5 ms-2" style="top: 25%;left: 10%; opacity: 0.8;">
+                <h5 class="fs-3">Eid ul Fit'r Offer</h5>
+                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan.</p>
+              </div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="img/banner/product1.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+              <div class="position-absolute text-white bg-dark p-3 rounded me-5 ms-2" style="top: 25%;left: 10%; opacity: 0.8;">
+                <h5 class="fs-3">First slide label</h5>
+                <p style="max-width: 600px;">Some representative placeholder content for the first Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="img/banner/product3.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+              <div class="position-absolute text-white bg-dark p-3 rounded me-5 ms-2 " style="top: 25%;left: 10%; opacity: 0.8;">
+                <h5 class="fs-3">First slide label</h5>
+                <p style="max-width: 600px;">Some representative placeholder content for the first Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <!-- <span class="carousel-control-prev-icon text-dark" aria-hidden="true">hhh</span> -->
+            <span class="text-dark"><i class="fa-solid fa-less-than fa-xl"></i></span>
+          </button>
+          <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <!-- <span class="carousel-control-next-icon text-dark" aria-hidden="true">hhh</span> -->
+            <span class="text-dark"><i class="fa-solid fa-greater-than fa-xl"></i></span>
+          </button>
+        </div>
+      </section>
+      <!-- Banner slider -->
+
+
+      <!-- Features -->
+      <section>
+        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-5 mb-5">
+          <div class="card border-0" style="width: 20rem;">
+              <div class="card-body d-flex align-items-center gap-2">
+                <i class="fa fa-truck-fast fa-bounce bg-info p-4 rounded-circle me-2"></i>
+                <p>It doesn't take more than 30 minutes, we arrive as soon as possible</p>
+              </div>
+          </div>
+          <div class="card border-0" style="width: 20rem;">
+              <div class="card-body d-flex align-items-center">
+                <i class="fa-solid fa-stopwatch fa-shake bg-info p-4 rounded-circle me-2"></i>
+                <p>We prepare your goods within 10 minutes
+                  So you are worry free</p>
+              </div>
+          </div>
+          <div class="card border-0" style="width: 20rem;">
+              <div class="card-body d-flex align-items-center">
+                <i class="fa-solid fa-sack-dollar fa-spin bg-info p-4 rounded-circle me-2"></i>
+                <p>We charge the lowest prices in the market and offer the best products</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+
+
+      <!-- latest product -->
+      <section>
+        <h1 class="text-center mb-3">Latest Products</h1>
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="img/product/rice.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Rice</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $37</li>
+                <li class="list-group-item">Quantity: 1 kg</li>
+                <li class="list-group-item">Quality: Balam / Own brand</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href="" class="px-4 btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to Wishlist"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Full View"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/product/chanachur.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Chanachur</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $160</li>
+                <li class="list-group-item">Quantity: 1000gram</li>
+                <li class="list-group-item">Quality: fat chanachur / Nipun</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/product/flour.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>flour</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $20</li>
+                <li class="list-group-item">Quantity: 1000gram</li>
+                <li class="list-group-item">Quality: tarak flour'</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>
+                    <div class="card" style="width: 18rem;">
+            <img src="img/product/mug-dal.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Mug Dal</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $70</li>
+                <li class="list-group-item">Quantity: 1000gram</li>
+                <li class="list-group-item">Quality: indian / brand: Narish</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>
+                    <div class="card" style="width: 18rem;">
+            <img src="img/product/onion.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Onion</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $30</li>
+                <li class="list-group-item">Quantity: 1000gram</li>
+                <li class="list-group-item">Quality: desi</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <img src="img/product/potato.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Potato</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $18</li>
+                <li class="list-group-item">Quantity: 1000gram</li>
+                <li class="list-group-item">Quality: desi</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>  
+          <div class="card" style="width: 18rem;">
+            <img src="img/product/wheel.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Chaka</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $45</li>
+                <li class="list-group-item">Quantity: 500gram</li>
+                <li class="list-group-item">Quality: detergent</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>  
+          <div class="card" style="width: 18rem;">
+            <img src="img/product/cookie.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Cookie</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: $120</li>
+                <li class="list-group-item">Quantity: 1 kg</li>
+                <li class="list-group-item">Quality: Soft and Tasty</li>
+              </ul>
+              <div class="d-flex justify-content-center  gap-1">
+                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              </div>
+                  
+            </div>
+          </div>  
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="" class="btn btn-danger btn-lg mt-3">Show More</a>
+        </div>        
+      </section>
+      <!-- latest product -->
+
+      <!-- Order By Category -->
+      <section class="my-5">
+        <h1 class="text-center mb-3">Order By Categories</h1>
+      <ul class="nav nav-pills mb-3 d-flex justify-content-center gap-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">#Potato</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">#Onion</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/rice.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Rice</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $37</li>
+                  <li class="list-group-item">Quantity: 1 kg</li>
+                  <li class="list-group-item">Quality: Balam / Own brand</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href="" class="px-4 btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to Wishlist"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Full View"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/chanachur.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Chanachur</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $160</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: fat chanachur / Nipun</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/flour.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>flour</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $20</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: tarak flour'</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+              <div class="card" style="width: 18rem;">
+              <img src="img/product/mug-dal.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Mug Dal</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $70</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: indian / brand: Narish</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div> 
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="" class="btn btn-danger mt-3">Show More</a>
+          </div>  
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/rice.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Rice</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $37</li>
+                  <li class="list-group-item">Quantity: 1 kg</li>
+                  <li class="list-group-item">Quality: Balam / Own brand</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href="" class="px-4 btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to Wishlist"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Full View"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/chanachur.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Chanachur</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $160</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: fat chanachur / Nipun</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/flour.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>flour</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $20</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: tarak flour'</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+              <div class="card" style="width: 18rem;">
+              <img src="img/product/mug-dal.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Mug Dal</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $70</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: indian / brand: Narish</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div> 
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="" class="btn btn-danger mt-3">Show More</a>
+          </div>  
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/rice.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Rice</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $37</li>
+                  <li class="list-group-item">Quantity: 1 kg</li>
+                  <li class="list-group-item">Quality: Balam / Own brand</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href="" class="px-4 btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to Wishlist"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Full View"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/chanachur.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Chanachur</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $160</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: fat chanachur / Nipun</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/product/flour.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>flour</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $20</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: tarak flour'</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div>
+              <div class="card" style="width: 18rem;">
+              <img src="img/product/mug-dal.jpg" height="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Mug Dal</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price: $70</li>
+                  <li class="list-group-item">Quantity: 1000gram</li>
+                  <li class="list-group-item">Quality: indian / brand: Narish</li>
+                </ul>
+                <div class="d-flex justify-content-center  gap-1">
+                    <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+                </div>
+                    
+              </div>
+            </div> 
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="" class="btn btn-danger mt-3">Show More</a>
+          </div>  
+        </div>
+      </div>  
+      </section>
+      <!-- Order By Category -->
+
+      <!-- About Product -->
+       <section>
+         <div class="d-flex justify-content-center my-5 flex-wrap gap-3">
+            <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
+                  <img src="img/product/potato.jpg" class="card-img-top" style="height: 300px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Potato</h5>
+                    <p class="card-text">The potato, a humble yet versatile tuber, is a staple food globally, cherished for its rich, starchy texture. It adapts effortlessly to various cooking methods, from baking and frying to mashing and roasting.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+            </div>
+            <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
+                  <img src="img/product/onion.jpg" class="card-img-top" style="height: 300px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Oninon</h5>
+                    <p class="card-text">The onion, a fundamental kitchen staple, adds depth and flavor to countless dishes. Its layers offer a rich, aromatic essence, whether caramelized to sweetness, sautéed for savory depth, or used raw for a sharp kick.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 23 mins ago</small></p>
+                  </div>
+            </div>
+            <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
+                  <img src="img/product/rice.jpg" class="card-img-top" style="max-height: 300px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Balam Rice</h5>
+                    <p class="card-text">Rice, a global staple, is cherished for its versatility and nutritional value. Its ability to complement diverse cuisines and absorb flavors makes it an essential component in countless dishes, from simple sides to elaborate meals.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 23 mins ago</small></p>
+                  </div>
+             </div>
+             <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
+              <img src="img/product/chanachur.jpg" class="card-img-top" style="max-height: 300px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chanachur</h5>
+                <p class="card-text">Chanachur, a beloved South Asian snack, is a vibrant mix of crispy ingredients like fried noodles, peanuts, and spices. Often enjoyed as a savory treat or party snack, it blends a perfect balance of crunchy texture and spicy flavor, making it a favorite for gatherings and casual munching alike.</p>
+                <p class="card-text"><small class="text-muted">Last updated 23 mins ago</small></p>
+              </div>
+         </div>
+         </div>
+       </section>
+       <!-- About Product -->
+
+       <!-- Footer -->
+        <footer>
+          <div class="container-fluid bg-light border-top border-3">
+            <div class="row mt-4">
+              <div class="col-12 mb-2">
+                <h5 class="text-center">KS Grocery</h5>
+                <p class="mx-auto d-block" style="max-width: 800px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa delectus sit hic, vel quia harum unde libero nesciunt nemo. Veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione earum adipisci, amet facilis magnam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, natus? <a href="">read more-></a></p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-evenly  flex-wrap">
+              <div class="">
+                <h5>Links</h5>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Faq</a></li>
+                  <li><a href="">Sign up</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Documentation</a></li>
+                </ul>
+             </div>
+             <div class="">
+                <h5>Contact & Address</h5>
+                <p><strong><i class="fa-solid fa-phone"></i> 0123456789</strong> <br> <i class="fa-solid fa-envelope"></i> <strong> gnnaisr123@gmali.com</strong> <br> <i class="fa-solid fa-location-dot"></i> <strong>gopr,Dahak,bd.</strong></p>
+             </div>
+            </div>
+            
+          </div>
+          <div class="d-flex justify-content-around bg-white border border-top">
+            <p class="mt-2">Copyright @2024</p>
+            <p class="mt-2">Made By<a href="">  Dev Nasir</a></p>
+          </div>
+        </footer>
+        <!-- footer -->
+
+
+       <!-- BackToTop -->
+       <div>
+        <a href="#" id="back-to-top" class="btn btn-primary rounded-circle back-to-top" role="button" aria-label="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+         </a>
+       </div>
+       <!-- BackToTop -->
+
+     <!-- Bootstrap  and own-->
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+     <!-- Bootstrap  and own -->
+</body>
+</html>

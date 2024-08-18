@@ -1,0 +1,11 @@
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 1000;
+}
+body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
