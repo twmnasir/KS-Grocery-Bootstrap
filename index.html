@@ -33,7 +33,60 @@
       <!-- pre_loader -->
       <!-- header -->
        <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+          <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-5 mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item ms-4">
+                  <a class="nav-link ms-2 link-dark fw-bold text-primary" href="#">Home</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link ms-2 link- fw-bold" href="#">Products</a>
+                </li>
+                <li class="nav-item ms-4 dropdown">
+                  <a class="nav-link dropdown-toggle ms-2 link-dark  fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item fw-bold" href="#">About</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#">Contact</a></li>
+                    <li><button class="dropdown-item fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasleft" aria-controls="offcanvasleft">Wishlist <span class="badge text-bg-danger rounded-circle">7</span></button></li>
+                    <li><a class="dropdown-item fw-bold" href="#">Faq</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#">Docs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item ms-5 dropdown">
+                  <a class="nav-link dropdown-toggle link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user fa-lg"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item fw-bold disabled" href="#">Dashboard</a></li>
+                    <li><a class="dropdown-item fw-bold" href="signin.html">Sign in</a></li>
+                    <li><a class="dropdown-item fw-bold" href="signup.html">Sign up</a></li>
+                    <li><a class="dropdown-item fw-bold disabled" href="signup.html">Log out</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item ms-5">
+                  <button class="nav-link position-relative link-dark" type="button" data-bs-toggle="offcanvas"
+                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping fa-lg"></i><span style="top: 8px;left: 100%;" class="position-absolute translate-middle badge rounded-circle bg-danger">5</span></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="d-flex justify-content-center bg-white py-4">
+          <form action="" method="">
+            <div class="search mx-3">
+              <input placeholder="Search your product, which you like" type="text">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">KS Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +136,7 @@
               </ul>
             </div>
           </div>
-        </nav>
+        </nav> -->
        </header>
       <!-- header -->
 
