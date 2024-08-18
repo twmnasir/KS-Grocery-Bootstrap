@@ -40,38 +40,23 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-3 mb-2 mb-lg-0 ms-auto">
+              <ul class="navbar-nav me-1 mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link ms-2 link-dark border-bottom border-3 border-primary" href="#">Home</a>
+                  <a class="nav-link ms-2 link-dark fw-bold text-primary" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-2 link-dark" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <button class="nav-link ms-2 position-relative link-dark" type="button" data-bs-toggle="offcanvas"
-                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart<span style="top: 8px;" class="position-absolute start-100 translate-middle badge rounded-circle bg-danger">5</span></button>
+                  <a class="nav-link ms-2 link- fw-bold" href="#">Products</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle ms-1 link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle ms-2 link-dark  fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Pages
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">About</a></li>
-                    <li><a class="dropdown-item" href="#">Contact</a></li>
-                    <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasleft" aria-controls="offcanvasleft">Wishlist <span class="badge text-bg-danger rounded-circle">7</span></button></li>
-                    <li><a class="dropdown-item" href="#">Faq</a></li>
-                    <li><a class="dropdown-item" href="#">Docs</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle ms-0 link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-user"></i>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item disabled" href="#">Dashboard</a></li>
-                    <li><a class="dropdown-item" href="signin.html">Sign in</a></li>
-                    <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
-                    <li><a class="dropdown-item disabled" href="signup.html">Log out</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#">About</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#">Contact</a></li>
+                    <li><button class="dropdown-item fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasleft" aria-controls="offcanvasleft">Wishlist <span class="badge text-bg-danger rounded-circle">7</span></button></li>
+                    <li><a class="dropdown-item fw-bold" href="#">Faq</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#">Docs</a></li>
                   </ul>
                 </li>
               </ul>
@@ -79,6 +64,23 @@
                 <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search Product">
                 <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
+              <ul class="navbar-nav me-5 mb-2 ms-1 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user fa-lg"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item fw-bold disabled" href="#">Dashboard</a></li>
+                    <li><a class="dropdown-item fw-bold" href="signin.html">Sign in</a></li>
+                    <li><a class="dropdown-item fw-bold" href="signup.html">Sign up</a></li>
+                    <li><a class="dropdown-item fw-bold disabled" href="signup.html">Log out</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link position-relative link-dark" type="button" data-bs-toggle="offcanvas"
+                   data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping fa-lg"></i><span style="top: 8px;left: 100%;" class="position-absolute translate-middle badge rounded-circle bg-danger">5</span></button>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
@@ -94,8 +96,8 @@
               <h5 id="offcanvasRightLabel">Cart items</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <table class="table object-fit-cover border">
+          <div class="offcanvas-body" style="overflow-x: hidden;">
+            <table class="table table-border">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -178,7 +180,7 @@
                 <h5 id="offcanvasRightLabel">Wish List </h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body" style="overflow-x: hidden;">
               <table class="table object-fit-cover border">
                 <thead>
                   <tr>
