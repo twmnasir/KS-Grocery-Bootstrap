@@ -14,7 +14,7 @@
        <link rel="stylesheet" href="css/index.css">
        <!-- OwnCss -->
 </head>
-<body>
+<body class="font-own">
      <!-- pre_loader -->
       <div id="preloader">
         <div class="spinner-grow text-primary" role="status">
@@ -35,9 +35,14 @@
        <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
           <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#">Navbar</a>
+            <a class="navbar-brand ms-5 fw-bold" href="#">KS Grocery</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
             </button>
             <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
               <ul class="navbar-nav me-5 mb-2 mb-lg-0 ms-auto">
@@ -46,6 +51,9 @@
                 </li>
                 <li class="nav-item ms-4">
                   <a class="nav-link ms-2 link- fw-bold" href="#">Products</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link ms-2 link- fw-bold" href="#">Offers</a>
                 </li>
                 <li class="nav-item ms-4 dropdown">
                   <a class="nav-link dropdown-toggle ms-2 link-dark  fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,14 +86,7 @@
             </div>
           </div>
         </nav>
-        <div class="d-flex justify-content-center bg-white py-4">
-          <form action="" method="">
-            <div class="search mx-3">
-              <input placeholder="Search your product, which you like" type="text">
-              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-          </form>
-        </div>
+
         <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">KS Store</a>
@@ -140,6 +141,16 @@
        </header>
       <!-- header -->
 
+      <!-- Search -->
+      <div class="d-flex justify-content-center bg-white py-4">
+        <form action="" method="">
+          <div class="search mx-3">
+            <input placeholder="Search Products" type="text">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </form>
+      </div>
+      <!-- Search -->
 
       <!-- offcanvas -->
       <section>
@@ -321,7 +332,7 @@
 
 
       <!-- Banner slider -->
-      <section>
+      <section class="box-shadow-own mt-2">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
@@ -329,63 +340,120 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
+            <div class="carousel-item active position-relative d-block">
+            <div class="container-fluid">
+                <div class="card text-center mx-auto" style="max-width: 100%;">
+                    <div class="card-body h_400 pt-5" style="background-image: url('img/banner/product1.jpg');">
+                        <h5 class="card-title pt-5 fs-2">Special Offer! Save Big This Summer!</h5>
+                        <p class="card- mx-auto" style="max-width: 600px;">Enjoy 10% off on all our products. Hurry, this deal won't last long. Discover the best deals of the season. Exclusive discounts on our top-selling items.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item position-relative">
+              <div class="container-fluid">
+                <div class="card text-center mx-auto" style="max-width: 100%;">
+                    <div class="card-body h_400 pt-5">
+                        <h5 class="card-title pt-5 fs-2">New Season, New Savings!</h5>
+                        <p class="card- mx-auto" style="max-width: 600px;">Get 30% off on all new arrivals. Refresh your wardrobe with the latest trends.Stay ahead of the fashion curve with our newest collection. Limited stock available.</p>
+                        <a href="#" class="btn btn-primary">Explore New Arrivals</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item position-relative">
+              <div class="container-fluid">
+                <div class="card text-center mx-auto" style="max-width: 100%;">
+                    <div class="card-body h_400 pt-5">
+                        <h5 class="card-title pt-5 fs-2">Back to School Bonanza!</h5>
+                        <p class="card- mx-auto" style="max-width: 600px;">Special discounts on essentials for the school year. Everything you need, all in one place.From backpacks to stationery, get ready for the new school year with unbeatable prices</p>
+                        <a href="#" class="btn btn-primary">Shop School Essentials</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="slider_icon">
+            <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="text-dark"><i class="fas fa-chevron-left fa-xl"></i></span>
+            </button>
+            <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="text-dark"><i class="fas fa-chevron-right fa-xl"></i></span>
+            </button>
+          </div>
+        </div>
+        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
             <div class="carousel-item active position-relative">
-              <img src="img/banner/product2.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+              <img src="img/banner/white1.jpg" class="d-block w-100" alt="..." style="height: 450px;">
               <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
                 <h5 class="fs-1">Eid ul Fit'r Offer</h5>
-                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-2">See Offers</a></p>
+                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-3">See Offers</a></p>
               </div>
             </div>
             <div class="carousel-item position-relative">
-              <img src="img/banner/product1.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+              <img src="img/banner/white2.jpg" class="d-block w-100" alt="..." style="height: 450px;">
               <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
                 <h1 class="fs-1">Eid ul Fit'r Offer</h1>
-                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-2">See Offers</a></p>
+                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-3">See Offers</a></p>
               </div>
             </div>
             <div class="carousel-item position-relative">
-              <img src="img/banner/product3.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+              <img src="img/banner/white4.jpg" class="d-block w-100" alt="..." style="height: 450px;">
               <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
                 <h3 class="fs-1">Eid ul Fit'r Offer</h3>
-                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-2">See Offers</a></p>
+                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-3">See Offers</a></p>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <!-- <span class="carousel-control-prev-icon text-dark" aria-hidden="true">hhh</span> -->
-            <span class="text-dark"><i class="fa-solid fa-less-than fa-xl"></i></span>
-          </button>
-          <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <!-- <span class="carousel-control-next-icon text-dark" aria-hidden="true">hhh</span> -->
-            <span class="text-dark"><i class="fa-solid fa-greater-than fa-xl"></i></span>
-          </button>
-        </div>
+          <div class="slider_icon">
+            <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="text-dark"><i class="fas fa-chevron-left fa-xl"></i></span>
+            </button>
+            <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="text-dark"><i class="fas fa-chevron-right fa-xl"></i></span>
+            </button>
+          </div>
+        </div> -->
       </section>
       <!-- Banner slider -->
 
 
       <!-- Features -->
       <section>
-        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-5 mb-5">
-          <div class="card border-0" style="width: 20rem;">
+        <h1 class="text-center mt-5">Why us?</h1>
+        <div class="d-flex justify-content-center align-items-center gap-1 flex-wrap mt-2 mb-5">
+          <div class="card border-0" style="width: 18rem;">
               <div class="card-body d-flex align-items-center gap-2">
-                <i class="fa fa-truck-fast fa-bounce bg-info p-4 rounded-circle me-2"></i>
+                <i class="fa fa-truck-fast bg-info p-4 rounded-circle me-2"></i>
                 <p>It doesn't take more than 30 minutes, we arrive as soon as possible</p>
               </div>
           </div>
-          <div class="card border-0" style="width: 20rem;">
+          <div class="card border-0" style="width: 18rem;">
               <div class="card-body d-flex align-items-center">
                 <i class="fa-solid fa-stopwatch fa-shake bg-info p-4 rounded-circle me-2"></i>
                 <p>We prepare your goods within 10 minutes
                   So you are worry free</p>
               </div>
           </div>
-          <div class="card border-0" style="width: 20rem;">
+          <div class="card border-0" style="width: 18rem;">
               <div class="card-body d-flex align-items-center">
-                <i class="fa-solid fa-sack-dollar fa-spin bg-info p-4 rounded-circle me-2"></i>
+                <i class="fa-solid fa-sack-dollar bg-info p-4 rounded-circle me-2"></i>
                 <p>We charge the lowest prices in the market and offer the best products</p>
               </div>
           </div>
+          <div class="card border-0" style="width: 18rem;">
+            <div class="card-body d-flex align-items-center">
+              <i class="fa-solid fa-heart bg-info p-4 rounded-circle me-2"></i>
+              <p>And time wise we give the best bundles. Like Bachelor Bundle</p>
+            </div>
+        </div>
         </div>
       </section>
       <!-- Features -->
