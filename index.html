@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KS-Grocery-Shop</title>
-     <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap -->
-     <!-- fontawesome -->
-     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-     <!-- fontawesome -->
-      <!-- OwnCss -->
-       <link rel="stylesheet" href="css/index.css">
-       <!-- OwnCss -->
+    <!-- ayroui -->
+    <link rel="stylesheet" href="css/ayroui.css">
+    <link rel="stylesheet" href="https://cdn.ayroui.com/1.0/css/tiny-slider.css" />
+    <!-- ayroui -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <!-- fontawesome -->
+    <!-- OwnCss -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- OwnCss -->
 </head>
-<body class="font-own">
+<body>
      <!-- pre_loader -->
       <div id="preloader">
         <div class="spinner-grow text-primary" role="status">
@@ -145,12 +149,18 @@
       <div class="d-flex justify-content-center bg-white py-4">
         <form action="" method="">
           <div class="search mx-3">
-            <input placeholder="Search Products" type="text">
+            <input placeholder="Search Products" id="search_input" type="text">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="list-group mt-1" id="search_list">
+              <a href="#" class="list-group-item list-group-item-action">Potato</a>
+              <a href="#" class="list-group-item list-group-item-action">Rice</a>
+              <a href="#" class="list-group-item list-group-item-action">Radhuni</a>
+            </div>
           </div>
         </form>
       </div>
       <!-- Search -->
+
 
       <!-- offcanvas -->
       <section>
@@ -332,7 +342,7 @@
 
 
       <!-- Banner slider -->
-      <section class="box-shadow-own mt-2">
+      <!-- <section class="box-shadow-own mt-2">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
@@ -343,7 +353,7 @@
             <div class="carousel-item active position-relative d-block">
             <div class="container-fluid">
                 <div class="card text-center mx-auto" style="max-width: 100%;">
-                    <div class="card-body h_400 pt-5" style="background-image: url('img/banner/product1.jpg');">
+                    <div class="card-body h_400 pt-5 bg_img_p1">
                         <h5 class="card-title pt-5 fs-2">Special Offer! Save Big This Summer!</h5>
                         <p class="card- mx-auto" style="max-width: 600px;">Enjoy 10% off on all our products. Hurry, this deal won't last long. Discover the best deals of the season. Exclusive discounts on our top-selling items.</p>
                         <a href="#" class="btn btn-primary">Shop Now</a>
@@ -354,7 +364,7 @@
             <div class="carousel-item position-relative">
               <div class="container-fluid">
                 <div class="card text-center mx-auto" style="max-width: 100%;">
-                    <div class="card-body h_400 pt-5">
+                    <div class="card-body h_400 pt-5 bg_img_p2">
                         <h5 class="card-title pt-5 fs-2">New Season, New Savings!</h5>
                         <p class="card- mx-auto" style="max-width: 600px;">Get 30% off on all new arrivals. Refresh your wardrobe with the latest trends.Stay ahead of the fashion curve with our newest collection. Limited stock available.</p>
                         <a href="#" class="btn btn-primary">Explore New Arrivals</a>
@@ -365,7 +375,7 @@
             <div class="carousel-item position-relative">
               <div class="container-fluid">
                 <div class="card text-center mx-auto" style="max-width: 100%;">
-                    <div class="card-body h_400 pt-5">
+                    <div class="card-body h_400 pt-5 bg_img_p3">
                         <h5 class="card-title pt-5 fs-2">Back to School Bonanza!</h5>
                         <p class="card- mx-auto" style="max-width: 600px;">Special discounts on essentials for the school year. Everything you need, all in one place.From backpacks to stationery, get ready for the new school year with unbeatable prices</p>
                         <a href="#" class="btn btn-primary">Shop School Essentials</a>
@@ -383,222 +393,382 @@
             </button>
           </div>
         </div>
-        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="bg-dark active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active position-relative">
-              <img src="img/banner/white1.jpg" class="d-block w-100" alt="..." style="height: 450px;">
-              <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
-                <h5 class="fs-1">Eid ul Fit'r Offer</h5>
-                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-3">See Offers</a></p>
+      </section> -->
+      <section class="slider-area slider-one">
+        <div class="bd-example">
+           <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                 <li
+                    data-bs-target="#carouselOne"
+                    data-bs-slide-to="0"
+                    class="active"
+                    ></li>
+                 <li data-bs-target="#carouselOne" data-bs-slide-to="1"></li>
+                 <li data-bs-target="#carouselOne" data-bs-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                 <div
+                    class="carousel-item bg_cover active"
+                    style="
+                    background-image: url(https://cdn.ayroui.com/1.0/images/slider/slider-one/1.jpg);
+                    "
+                    >
+                    <div class="carousel-caption">
+                       <div class="container">
+                          <div class="row justify-content-center">
+                             <div class="col-xl-6 col-lg-7 col-sm-10">
+                                <h2 class="carousel-title">
+                                  Special Offer! Save Big This Summer!
+                                </h2>
+                                <p class="text">
+                                  Enjoy 10% off on all our products. Hurry, this deal won't last long. Discover the best deals of the season. Exclusive discounts on our top-selling items.</p>
+                                </p>
+                                <ul class="carousel-btn rounded-buttons">
+                                   <li>
+                                      <a
+                                         class="btn primary-btn rounded-full"
+                                         href="javascript:void(0)"
+                                         >
+                                         Explore New Arrivals
+                                      </a>
+                                   </li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div
+                    class="carousel-item bg_cover"
+                    style="
+                    background-image: url(https://cdn.ayroui.com/1.0/images/slider/slider-one/2.jpg);
+                    "
+                    >
+                    <div class="carousel-caption">
+                       <div class="container">
+                          <div class="row justify-content-center">
+                             <div class="col-xl-6 col-lg-7 col-sm-10">
+                                <h2 class="carousel-title">
+                                  New Season, New Savings!
+                                </h2>
+                                <p class="text">
+                                  Get 30% off on all new arrivals. Refresh your wardrobe with the latest trends.Stay ahead of the fashion curve with our newest collection. Limited stock available.</p>
+                                </p>
+                                <ul class="carousel-btn rounded-buttons">
+                                   <li>
+                                      <a
+                                         class="btn primary-btn rounded-full"
+                                         href="javascript:void(0)"
+                                         >
+                                         Explore New Arrivals
+                                      </a>
+                                   </li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div
+                    class="carousel-item bg_cover"
+                    style="
+                    background-image: url(https://cdn.ayroui.com/1.0/images/slider/slider-one/3.jpg);
+                    "
+                    >
+                    <div class="carousel-caption">
+                       <div class="container">
+                          <div class="row justify-content-center">
+                             <div class="col-xl-6 col-lg-7 col-sm-10">
+                                <h2 class="carousel-title">
+                                  Back to School Bonanza!
+                                </h2>
+                                <p class="text">
+                                  Special discounts on essentials for the school year. Everything you need, all in one place.From backpacks to stationery, get ready for the new school year with unbeatable prices</p>
+                                </p>
+                                <ul class="carousel-btn rounded-buttons">
+                                   <li>
+                                      <a
+                                         class="btn primary-btn rounded-full"
+                                         href="javascript:void(0)"
+                                         >
+                                         Shop School Essentials
+                                      </a>
+                                   </li>
+                                </ul>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
               </div>
-            </div>
-            <div class="carousel-item position-relative">
-              <img src="img/banner/white2.jpg" class="d-block w-100" alt="..." style="height: 450px;">
-              <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
-                <h1 class="fs-1">Eid ul Fit'r Offer</h1>
-                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-3">See Offers</a></p>
-              </div>
-            </div>
-            <div class="carousel-item position-relative">
-              <img src="img/banner/white4.jpg" class="d-block w-100" alt="..." style="height: 450px;">
-              <div class="position-absolute p-3 rounded me-5 ms-2" style="top: 12%;left: 10%;">
-                <h3 class="fs-1">Eid ul Fit'r Offer</h3>
-                <p style="max-width: 500px;">Eid ul-Fitr brings festive discounts across various products, from clothing to groceries. These special offers enhance celebrations, allowing families to shop for new items and enjoy significant savings as they mark the end of Ramadan. <br> <a href="" class="btn btn-primary mt-3">See Offers</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="slider_icon">
-            <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="text-dark"><i class="fas fa-chevron-left fa-xl"></i></span>
-            </button>
-            <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="text-dark"><i class="fas fa-chevron-right fa-xl"></i></span>
-            </button>
-          </div>
-        </div> -->
+              <a
+                 class="carousel-control-prev text-decoration-none"
+                 href="#carouselOne"
+                 role="button"
+                 data-bs-slide="prev"
+                 >
+                 <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                 class="carousel-control-next text-decoration-none"
+                 href="#carouselOne"
+                 role="button"
+                 data-bs-slide="next"
+                 >
+                 <i class="fas fa-chevron-right"></i>
+              </a>
+           </div>
+           <!-- carousel -->
+        </div>
+        <!-- bd-example -->
       </section>
       <!-- Banner slider -->
 
-
-      <!-- Features -->
-      <section>
-        <h1 class="text-center mt-5">Why us?</h1>
-        <div class="d-flex justify-content-center align-items-center gap-1 flex-wrap mt-2 mb-5">
-          <div class="card border-0" style="width: 18rem;">
-              <div class="card-body d-flex align-items-center gap-2">
-                <i class="fa fa-truck-fast bg-info p-4 rounded-circle me-2"></i>
-                <p>It doesn't take more than 30 minutes, we arrive as soon as possible</p>
+     <!-- features -->
+      <section class="about-area about-one">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                <div class="about-title text-center">
+                    <h2 class="title fw-bold">Why Choose Us</h2>
+                </div>
               </div>
           </div>
-          <div class="card border-0" style="width: 18rem;">
-              <div class="card-body d-flex align-items-center">
-                <i class="fa-solid fa-stopwatch fa-shake bg-info p-4 rounded-circle me-2"></i>
-                <p>We prepare your goods within 10 minutes
-                  So you are worry free</p>
+          <!-- row -->
+          <div class="row justify-content-center mt-5">
+              <div class="col-md-4 col-sm-8">
+                <div class="single-about-items">
+                    <div class="items-icon">
+                      <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="items-content">
+                      <h4 class="items-title">Fast delivery</h4>
+                      <p class="text">
+                          It doesn't take more than 30 minutes, we arrive as soon as possible
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-8">
+                <div class="single-about-items">
+                    <div class="items-icon">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="items-content">
+                      <h4 class="items-title">Best loved</h4>
+                      <p class="text">
+                        We prepare your goods within 10 minutes
+                        So you are worry free
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-8">
+                <div class="single-about-items">
+                    <div class="items-icon">
+                      <i class="fa-solid fa-dollar"></i>
+                    </div>
+                    <div class="items-content">
+                      <h4 class="items-title">Most favourite</h4>
+                      <p class="text">
+                        We charge the lowest prices in the market and offer the best products
+                      </p>
+                    </div>
+                </div>
               </div>
           </div>
-          <div class="card border-0" style="width: 18rem;">
-              <div class="card-body d-flex align-items-center">
-                <i class="fa-solid fa-sack-dollar bg-info p-4 rounded-circle me-2"></i>
-                <p>We charge the lowest prices in the market and offer the best products</p>
-              </div>
-          </div>
-          <div class="card border-0" style="width: 18rem;">
-            <div class="card-body d-flex align-items-center">
-              <i class="fa-solid fa-heart bg-info p-4 rounded-circle me-2"></i>
-              <p>And time wise we give the best bundles. Like Bachelor Bundle</p>
-            </div>
-        </div>
         </div>
       </section>
-      <!-- Features -->
-
+     <!-- features -->
 
       <!-- latest product -->
-      <section>
-        <h1 class="text-center mb-3">Latest Products</h1>
+      <section class="mb-5">
+        <h1 class="text-center mb-5">Latest Products</h1>
         <div class="d-flex flex-wrap gap-2 justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="img/product/rice.jpg" height="200px" class="card-img-top" alt="...">
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/cookie.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>Rice</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $37</li>
-                <li class="list-group-item">Quantity: 1 kg</li>
-                <li class="list-group-item">Quality: Balam / Own brand</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href="" class="px-4 btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to Wishlist"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Full View"><i class="fa-solid fa-maximize"></i></a>
+              <h5 class="card-title"><a href="" class="text-dark">Cookie</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
               </div>
-                  
+            </div>
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 1 Days</span>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/product/chanachur.jpg" height="200px" class="card-img-top" alt="...">
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/rice.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>Chanachur</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $160</li>
-                <li class="list-group-item">Quantity: 1000gram</li>
-                <li class="list-group-item">Quality: fat chanachur / Nipun</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              <h5 class="card-title"><a href="" class="text-dark">rice</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
               </div>
-                  
+            </div>
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 2 Days</span>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/product/flour.jpg" height="200px" class="card-img-top" alt="...">
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/mug-dal.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>flour</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $20</li>
-                <li class="list-group-item">Quantity: 1000gram</li>
-                <li class="list-group-item">Quality: tarak flour'</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              <h5 class="card-title"><a href="" class="text-dark">dal</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
               </div>
-                  
+            </div>
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 3 Days</span>
             </div>
           </div>
-                    <div class="card" style="width: 18rem;">
-            <img src="img/product/mug-dal.jpg" height="200px" class="card-img-top" alt="...">
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/chanachur.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>Mug Dal</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $70</li>
-                <li class="list-group-item">Quantity: 1000gram</li>
-                <li class="list-group-item">Quality: indian / brand: Narish</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              <h5 class="card-title"><a href="" class="text-dark">chanachur</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
               </div>
-                  
+            </div>
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 1 Days</span>
             </div>
           </div>
-                    <div class="card" style="width: 18rem;">
-            <img src="img/product/onion.jpg" height="200px" class="card-img-top" alt="...">
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/flour.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>Onion</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $30</li>
-                <li class="list-group-item">Quantity: 1000gram</li>
-                <li class="list-group-item">Quality: desi</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              <h5 class="card-title"><a href="" class="text-dark">flour</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
               </div>
-                  
+            </div>
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 3 Days</span>
             </div>
           </div>
-        <div class="card" style="width: 18rem;">
-            <img src="img/product/potato.jpg" height="200px" class="card-img-top" alt="...">
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/onion.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>Potato</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $18</li>
-                <li class="list-group-item">Quantity: 1000gram</li>
-                <li class="list-group-item">Quality: desi</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              <h5 class="card-title"><a href="" class="text-dark">onion</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
               </div>
-                  
             </div>
-          </div>  
-          <div class="card" style="width: 18rem;">
-            <img src="img/product/wheel.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 2 Days</span>
+            </div>
+          </div>
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/potato.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>Chaka</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $45</li>
-                <li class="list-group-item">Quantity: 500gram</li>
-                <li class="list-group-item">Quality: detergent</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
+              <h5 class="card-title"><a href="" class="text-dark">potato</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
               </div>
-                  
             </div>
-          </div>  
-          <div class="card" style="width: 18rem;">
-            <img src="img/product/cookie.jpg" height="200px" class="card-img-top" alt="...">
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 2 Days</span>
+            </div>
+          </div>
+          <div class="card card_product rounded-3 bg-light" style="width: 18rem;">
+            <img src="img/product/wheel.jpg" class="card-img-top" height="200px" alt="Product Image">
             <div class="card-body">
-              <h5>Cookie</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price: $120</li>
-                <li class="list-group-item">Quantity: 1 kg</li>
-                <li class="list-group-item">Quality: Soft and Tasty</li>
-              </ul>
-              <div class="d-flex justify-content-center  gap-1">
-                  <a href=""  class="px-4 btn btn-outline-primary btn-sm"><i class="fa-solid fa-cart-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-info btn-sm"><i class="fa-solid fa-heart-circle-plus"></i></a>
-                  <a href="" class="px-4 btn btn-outline-danger btn-sm"><i class="fa-solid fa-maximize"></i></a>
-              </div>
-                  
+              <h5 class="card-title"><a href="" class="text-dark">wheel</a></h5>
+              <p class="card-text text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum.</p>
+              <p class="card-text mb-1">1kg / nipun</p>
+              <s class=" d-inline-block"><h6 class="card-subtitle mb-2 text-muted">$99.99</h6></s>
+              <h6 class="card-subtitle mb-2 text-muted  d-inline-block ms-1"> $80.20</h6>
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between gap-1 mt-2">
+                <a href="" class="px-4 btn btn-success rounded-pill">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="" class="px-4 btn btn-info text-white rounded-pill">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="" class="px-4 btn btn-danger text-white rounded-pill">Buy Now</a>
+              </div>  
             </div>
-          </div>  
+            <div class="position-absolute top-0 start-0 m-2">
+              <span class="badge bg-danger">New - 4 Days</span>
+            </div>
+          </div>
         </div>
         <div class="d-flex justify-content-center">
           <a href="" class="btn btn-danger btn-lg mt-3">Show More</a>
@@ -607,8 +777,8 @@
       <!-- latest product -->
 
       <!-- Order By Category -->
-      <section class="my-5">
-        <h1 class="text-center mb-3">Order By Categories</h1>
+      <section class="my-6">
+        <h1 class="text-center mb-4 mt-5">Order By Categories</h1>
       <ul class="nav nav-pills mb-3 d-flex justify-content-center gap-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link fs-5 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">#Potato</button>
@@ -620,13 +790,13 @@
           <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
+          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Wheel</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
+          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Dal</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#Rice</button>
+          <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">#cookie</button>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
@@ -859,79 +1029,305 @@
       </section>
       <!-- Order By Category -->
 
-      <!-- About Product -->
-       <section>
-         <div class="d-flex justify-content-center my-5 flex-wrap gap-3">
-            <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
-                  <img src="img/product/potato.jpg" class="card-img-top" style="height: 300px;" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Potato</h5>
-                    <p class="card-text">The potato, a humble yet versatile tuber, is a staple food globally, cherished for its rich, starchy texture. It adapts effortlessly to various cooking methods, from baking and frying to mashing and roasting.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-            </div>
-            <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
-                  <img src="img/product/onion.jpg" class="card-img-top" style="height: 300px;" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Oninon</h5>
-                    <p class="card-text">The onion, a fundamental kitchen staple, adds depth and flavor to countless dishes. Its layers offer a rich, aromatic essence, whether caramelized to sweetness, sautéed for savory depth, or used raw for a sharp kick.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 23 mins ago</small></p>
-                  </div>
-            </div>
-            <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
-                  <img src="img/product/rice.jpg" class="card-img-top" style="max-height: 300px;" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Balam Rice</h5>
-                    <p class="card-text">Rice, a global staple, is cherished for its versatility and nutritional value. Its ability to complement diverse cuisines and absorb flavors makes it an essential component in countless dishes, from simple sides to elaborate meals.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 23 mins ago</small></p>
-                  </div>
-             </div>
-             <div class="card mb-3 m-2 border-0" style="max-width: 450px;">
-              <img src="img/product/chanachur.jpg" class="card-img-top" style="max-height: 300px;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Chanachur</h5>
-                <p class="card-text">Chanachur, a beloved South Asian snack, is a vibrant mix of crispy ingredients like fried noodles, peanuts, and spices. Often enjoyed as a savory treat or party snack, it blends a perfect balance of crunchy texture and spicy flavor, making it a favorite for gatherings and casual munching alike.</p>
-                <p class="card-text"><small class="text-muted">Last updated 23 mins ago</small></p>
+      <!-- Blog -->
+      <section class="mb-5">
+        <div class="container">
+          <div class="d-flex justify-content-center flex-wrap gap-2">
+            <div class="card box-shadow-own" style="width: 21rem;">
+              <img src="img/product/chanachur.jpg" alt="" style="height: 220px;" class="card-img-top">
+              <div class="card-body mt-2">
+                <h5 class="card-title"><a href="" class="text-dark">Chanachur</a></h5>
+                <small class="me-4"><i class="fa-regular fa-calendar"></i> Mar 23, 2022</small>
+                <small><i class="fa-regular fa-comment"></i> 24 Comment</small>
+                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto perferendis architecto expedita sequi voluptatibus ut vitae fugiat harum. Facilis.</p>
+                <a href="" class="text-dark">Read More</a>
               </div>
-         </div>
-         </div>
+            </div>
+            <div class="card" style="width: 21rem;">
+              <img src="img/product/rice.jpg" alt="" style="height: 220px;" class="card-img-top">
+              <div class="card-body mt-2">
+                <h5 class="card-title"><a href="" class="text-dark">Rice</a></h5>
+                <small class="me-4"><i class="fa-regular fa-calendar"></i> Mar 23, 2022</small>
+                <small><i class="fa-regular fa-comment"></i> 24 Comment</small>
+                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto perferendis architecto expedita sequi voluptatibus ut vitae fugiat harum. Facilis.</p>
+                <a href="" class="text-dark">Read More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 21rem;">
+              <img src="img/product/mug-dal.jpg" alt="" style="height: 220px;" class="card-img-top">
+              <div class="card-body mt-2">
+                <h5 class="card-title"><a href="" class="text-dark">Dal</a></h5>
+                <small class="me-4"><i class="fa-regular fa-calendar"></i> Mar 23, 2022</small>
+                <small><i class="fa-regular fa-comment"></i> 24 Comment</small>
+                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto perferendis architecto expedita sequi voluptatibus ut vitae fugiat harum. Facilis.</p>
+                <a href="" class="text-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog -->
+
+      <!-- client -->
+      <section class="client-logo-area client-logo-one">
+        <div class="section-title-two">
+          <div class="container">
+              <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                      <h2 class="fw-bold">Our Awesome Clients</h2>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                          eiusmod tempor incididunt ut labore aliqua.
+                      </p>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-6">
+                <div class="single-client text-center">
+                    <img src="https://cdn.ayroui.com/1.0/images/client-logo/graygrids.svg" alt="Logo" />
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="single-client text-center">
+                    <img src="https://cdn.ayroui.com/1.0/images/client-logo/uideck.svg" alt="Logo" />
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="single-client text-center">
+                    <img src="https://cdn.ayroui.com/1.0/images/client-logo/ayroui.svg" alt="Logo" />
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="single-client text-center">
+                    <img src="https://cdn.ayroui.com/1.0/images/client-logo/lineicons.svg" alt="Logo" />
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- client -->
+
+
+       <!-- testimonial -->
+       <section class="testimonial-one">
+        <div class="section-title-seven">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-title align-center">
+                  <span> Testimonial </span>
+                  <h2 class="fw-bold">What People Says</h2>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="testimonial-one-wrapper">
+            <div class="row justify-content-center">
+              <div class="col-md-9 col-lg-12">
+                <div class="row testimonial-one-active">
+                  <div class="col-lg-4">
+                    <div class="single-testimonial text-center">
+                      <div class="testimonial-image">
+                        <img src="https://cdn.ayroui.com/1.0/images/testimonial/author-1.jpg" alt="Author" />
+                        <div class="quote-icon">
+                          <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="testimonial-content">
+                        <p class="text">
+                          Stop wasting time and money designing and managing a
+                          website that doesn’t get results. Happiness lorem guaranteed!
+                        </p>
+                        <h6 class="author-name">Isabela Moreira</h6>
+                        <span class="sub-title">CEO, GrayGrids</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="single-testimonial text-center">
+                      <div class="testimonial-image">
+                        <img src="https://cdn.ayroui.com/1.0/images/testimonial/author-2.jpg" alt="Author" />
+                        <div class="quote-icon">
+                          <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="testimonial-content">
+                        <p class="text">
+                          Stop wasting time and money designing and managing a
+                          website that doesn’t get results. Happiness lorem guaranteed!
+                        </p>
+                        <h6 class="author-name">Fajar Siddiq</h6>
+                        <span class="sub-title">Founder, MakerFlix</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="single-testimonial text-center">
+                      <div class="testimonial-image">
+                        <img src="https://cdn.ayroui.com/1.0/images/testimonial/author-3.jpg" alt="Author" />
+                        <div class="quote-icon">
+                          <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="testimonial-content">
+                        <p class="text">
+                          Stop wasting time and money designing and managing a
+                          website that doesn’t get results. Happiness lorem guaranteed!
+                        </p>
+                        <h6 class="author-name">Fiona</h6>
+                        <span class="sub-title">Lead Designer, UIdeck</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="single-testimonial text-center">
+                      <div class="testimonial-image">
+                        <img src="https://cdn.ayroui.com/1.0/images/testimonial/author-4.jpg" alt="Author" />
+                        <div class="quote-icon">
+                          <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                      </div>
+                      <div class="testimonial-content">
+                        <p class="text">
+                          Stop wasting time and money designing and managing a
+                          website that doesn’t get results. Happiness lorem guaranteed!
+                        </p>
+                        <h6 class="author-name">Elon Musk</h6>
+                        <span class="sub-title">CEO, SpaceX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
        </section>
-       <!-- About Product -->
+       <!-- testimonial -->
 
-       <!-- Footer -->
-        <footer>
-          <div class="container-fluid bg-light border-top border-3">
-            <div class="row mt-4">
-              <div class="col-12 mb-2">
-                <h5 class="text-center">KS Grocery</h5>
-                <p class="mx-auto d-block" style="max-width: 800px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa delectus sit hic, vel quia harum unde libero nesciunt nemo. Veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione earum adipisci, amet facilis magnam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, natus? <a href="">read more-></a></p>
+
+      <!-- footer -->
+      <footer class="footer-area footer-one bg-light">
+        <div class="footer-widget">
+          <div class="container">
+              <div class="row">
+                <div class="col-xl-6 col-lg-4 col-sm-12">
+                    <div class="f-about">
+                      <div class="footer-logo">
+                          <a href="javascript:void(0)">
+                            <h5 class="fs-4">KS Grocery</h5>
+                          </a>
+                      </div>
+                      <p class="text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, itaque.
+                      </p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-4">
+                    <div class="footer-link">
+                      <h6 class="footer-title">Company</h6>
+                      <ul>
+                          <li><a href="javascript:void(0)">About</a></li>
+                          <li><a href="javascript:void(0)">Contact</a></li>
+                          <li><a href="javascript:void(0)">Marketing</a></li>
+                          <li><a href="javascript:void(0)">Awards</a></li>
+                      </ul>
+                    </div>
+                    <!-- footer link -->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-sm-4">
+                    <div class="footer-link">
+                      <h6 class="footer-title">Services</h6>
+                      <ul>
+                          <li><a href="javascript:void(0)">Products</a></li>
+                          <li><a href="javascript:void(0)">Business</a></li>
+                          <li><a href="javascript:void(0)">Developer</a></li>
+                          <li><a href="javascript:void(0)">Insights</a></li>
+                      </ul>
+                    </div>
+                    <!-- footer link -->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-sm-4">
+                    <!-- Start Footer Contact -->
+                    <div class="footer-contact">
+                      <h6 class="footer-title">Help & Suuport</h6>
+                      <ul class="p-0">
+                          <li class="p-0">
+                            <i class="lni lni-map-marker"></i> 
+                            fulbariget, khulna, Bangladesh.
+                          </li>
+                          <li class="p-0"> +88 0123456789</li>
+                          <li class="p-0"> gnnasir123@gmail.com</li>
+                      </ul>
+                    </div>
+                    <!-- End Footer Contact -->
+                </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-evenly  flex-wrap">
-              <div class="">
-                <h5>Links</h5>
-                <ul>
-                  <li><a href="">About</a></li>
-                  <li><a href="">Faq</a></li>
-                  <li><a href="">Sign up</a></li>
-                  <li><a href="">Contact</a></li>
-                  <li><a href="">Documentation</a></li>
-                </ul>
-             </div>
-             <div class="">
-                <h5>Contact & Address</h5>
-                <p><strong><i class="fa-solid fa-phone"></i> 0123456789</strong> <br> <i class="fa-solid fa-envelope"></i> <strong> gnnaisr123@gmali.com</strong> <br> <i class="fa-solid fa-location-dot"></i> <strong>gopr,Dahak,bd.</strong></p>
-             </div>
-            </div>
-            
+              <!-- row -->
           </div>
-          <div class="d-flex justify-content-around bg-white border border-top">
-            <p class="mt-2">Copyright @2024</p>
-            <p class="mt-2">Made By<a href="">  Dev Nasir</a></p>
+          <!-- container -->
+        </div>
+        <!-- footer widget -->
+        <div class="footer-copyright">
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                    <div
+                      class="
+                      copyright
+                      text-center
+                      d-md-flex
+                      justify-content-between
+                      align-items-center
+                      "
+                      >
+                      <p class="text">Copyright © 2024 AyroUI. All Rights Reserved</p>
+                      <p class="text">Made by <a href="">NADev</a></p>
+                      <ul class="social p-0">
+                          <li>
+                            <a href="javascript:void(0)">
+                              <i class="fa-brands fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">
+                              <i class="fa-brands fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">
+                              <i class="fa-brands fa-instagram"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">
+                            <i class="fa-brands fa-youtube"></i>
+                            </a>
+                          </li>
+                      </ul>
+                    </div>
+                    <!-- copyright -->
+                </div>
+              </div>
+              <!-- row -->
           </div>
-        </footer>
-        <!-- footer -->
-
+          <!-- container -->
+        </div>
+        <!-- footer copyright -->
+      </footer>
+      <!-- footer -->
 
        <!-- BackToTop -->
        <div>
@@ -942,6 +1338,7 @@
        <!-- BackToTop -->
 
      <!-- Bootstrap  and own-->
+     <script src="https://cdn.ayroui.com/1.0/js/tiny-slider.js"></script>
      <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
      <!-- Bootstrap  and own -->

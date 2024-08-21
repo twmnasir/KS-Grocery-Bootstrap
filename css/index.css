@@ -1,33 +1,4 @@
-#back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-    z-index: 1000;
-}
-body {
-    overflow-x: hidden;
-}
-.box-shadow-own{
-  box-shadow: 0 0 7px rgba(234, 217, 217, 0.97);
-}
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    /* Hide the preloader by default */
-body.loaded #preloader {
-    display: none;
-}
-   .search {
+  .search {
     position: relative;
   }
 
@@ -52,35 +23,11 @@ body.loaded #preloader {
     right: 0;
     transition: 0.9s ease;
   }
-  /* .search select{
-    background-color: #4e99e9;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 20px 0px 0px 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 0;
-    right: 100%;
-    transition: 0.9s ease;
-  } */
-
   .search button[type="submit"]:hover {
     transform: scale(1.1);
     color: #fff;
     background-color: #479ee5;
   }
-  /* .search select:hover {
-    color: #fff;
-    background-color: #e94e4e
-  } */
-  /* .search_label{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-  } */
 /* From Uiverse.io by Cevorob */ 
 .burger {
   position: relative;
@@ -140,6 +87,46 @@ body.loaded #preloader {
   top: 22px; /* Adjusted for smaller size */
   left: 4px; /* Adjusted for smaller size */
 }
+  /* OWN_CSS */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 1000;
+}
+body {
+  overflow-x: hidden;
+}
+.box-shadow-own{
+box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+transition: 0.6s;
+}
+.box-shadow-own:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.17);
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  /* Hide the preloader by default */
+body.loaded #preloader {
+  display: none;
+}
+#search_list{
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  z-index: 9999;
+}
 .font-own{
   font-style: italic;
 }
@@ -149,10 +136,43 @@ body.loaded #preloader {
 .w_800{
   width: 800px;
 }
-.top-12{
-  top: 12%;
+.my-6{
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-
+.btn_no_border{
+  border: 0;
+}
+.bg-teal{
+  background-color: #29d29f;
+  color: #fff;
+  transition: 0.5s;
+}
+.bg-teal:hover{
+  background-color: #265849;
+  color: #fff;
+}
+.bg_img_p1{
+  background-image: url('../img/banner/product1.jpg');
+}.bg_img_p2{
+  background-image: url('../img/banner/product2.jpg');
+}
+.bg_img_p3{
+  background-image: url('../img/banner/product3.jpg');
+}
+.card_product{
+  transition: 0.6s;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.card_product img{
+  transition: 0.5s;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.card_product:hover{
+  border: 1px solid black;
+}
   /* Responsive Design */
   @media (max-width: 750px) {
     .search input[type="text"] {
